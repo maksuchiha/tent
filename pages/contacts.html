@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Техническое задание</title>
+    <title>Контакты</title>
     <link rel="stylesheet" href="./../style/style.css">
     <script src="./../script/script.js" defer></script>
 </head>
@@ -158,7 +158,7 @@
                     </ul>
                     <div class="contacts__row">
                         <div class="contacts__info">
-                            <h1 class="title">контакты</h1>
+                            <h1 class="title contacts__title">контакты</h1>
                             <div class="contacts__text">
                                 ООО «Тентовые конструкции»<br>
                                 ИНН 3812095594<br>
@@ -210,7 +210,11 @@
                             <input placeholder="Имя (не обязательно)" aria-label="" type="text">
                             <input placeholder="Номер телефона" aria-label="" type="text">
                             <input placeholder="Электронная почта" aria-label="" type="text">
-                            <input type="file">
+                            <input id="contacts-file" type="file">
+                            <label class="contacts-form__file" for="contacts-file">
+                                <img src="./../img/contacts/file.svg" alt="file">
+                                Прикрепить своё ТЗ при наличии
+                            </label>
                             <button class="button contacts-form__button">
                                 ОТПРАВИТЬ ЗАЯВКУ
                             </button>
@@ -225,7 +229,7 @@
             </div>
         </section>
         <section class="map">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0aca8837b6cd0d73389c0510540604a1d19053a6e0169ccc4165c6283048a58b&amp;width=100%25&amp;height=550&amp;lang=ru_RU&amp;scroll=false"></script>
+            <script charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0aca8837b6cd0d73389c0510540604a1d19053a6e0169ccc4165c6283048a58b&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=false"></script>
         </section>
         <section class="feedback">
             <div class="container">
