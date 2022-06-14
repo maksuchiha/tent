@@ -2332,5 +2332,95 @@ address {
     margin: 0 auto;
   }
 }
+.scopies {
+  padding: 40px 0 100px;
+}
+.scopies__inner {
+  max-width: 1100px;
+  margin-left: auto;
+}
+.scopies-message {
+  display: flex;
+  padding: 10px 25px;
+  background: linear-gradient(89.89deg, #1959A8 0.1%, rgba(0, 88, 172, 0) 94.74%);
+  border-radius: 10px 0 0 10px;
+  margin-bottom: 50px;
+}
+.scopies-message__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  max-width: 460px;
+}
+.scopies-message__items {
+  display: flex;
+}
+.scopies-message__item {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.scopies-message__item img {
+  width: 140px;
+  height: 120px;
+  object-fit: scale-down;
+  display: flex;
+  margin-bottom: 5px;
+}
+.scopies-block__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #123E75;
+  margin-bottom: 25px;
+}
+.scopies-block__row {
+  display: flex;
+  gap: 25px;
+}
+.scopies-block-options {
+  width: 50%;
+  border-top: 1px solid #123E75;
+}
+.scopies-block-options__wr {
+  padding: 25px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #123E75;
+}
+.scopies-block-options__name {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 140%;
+  color: #123E75;
+}
+.scopies-block-options__items {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #123E75;
+  list-style: disc;
+  padding-left: 20px;
+  max-width: 260px;
+}
+.scopies-block__img {
+  width: 50%;
+}
+.scopies-block__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+}
 
 /*# sourceMappingURL=style.css.map */
