@@ -81,7 +81,7 @@ const tabs = () => {
         }
     }
 
-    setInterval(autoTabs, 2000)
+    setInterval(autoTabs, 4000)
 }
 
 const checkHeight = () => {
