@@ -105,4 +105,6 @@ if (document.querySelector('.vacancies__inner')) {
 if (document.querySelector('.design-tent-nav')) {
     tabs()
 }
-checkHeight()
+if (document.body.scrollWidth > 1230) {
+    checkHeight()
+}
