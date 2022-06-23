@@ -51,6 +51,7 @@ if (document.querySelector('.companies__inner')) {
 
 const tabs = () => {
     const tabs = document.querySelector('.design-tent-nav')
+    let count = 1
 
     tabs.addEventListener('click', (e) => {
         if (e.target.closest('.design-tent-nav__item')) {
@@ -62,9 +63,25 @@ const tabs = () => {
             const model = document.querySelector('.design-tent__model > img')
 
             model.setAttribute('src', `./img/design/${e.target.closest('.design-tent-nav__item').getAttribute('data-image')}.png`)
-
+            count = +e.target.closest('.design-tent-nav__item').getAttribute('data-image')
         }
     })
+
+    const autoTabs = () => {
+
+        if (count <= 2) {
+            tabs.querySelectorAll('.design-tent-nav__item').forEach((item) => {
+                item.classList.remove('design-tent-nav__item_active')
+            })
+            tabs.querySelectorAll('.design-tent-nav__item')[count].classList.add('design-tent-nav__item_active')
+            document.querySelector('.design-tent__model > img').setAttribute('src', `./img/design/${tabs.querySelectorAll('.design-tent-nav__item')[count].getAttribute('data-image')}.png`)
+            count++
+        } else if (count > 2) {
+            count = 0
+        }
+    }
+
+    setInterval(autoTabs, 2000)
 }
 
 const checkHeight = () => {
