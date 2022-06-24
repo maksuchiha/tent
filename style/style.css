@@ -2682,7 +2682,7 @@ address {
   text-decoration: underline;
 }
 .cases__button {
-  margin-left: auto;
+  margin: 0 auto;
 }
 
 @media (max-width: 1022px) {
