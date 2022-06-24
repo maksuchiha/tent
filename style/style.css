@@ -1087,8 +1087,8 @@ address {
 .error__title {
   font-style: normal;
   font-weight: 700;
-  font-size: 400px;
-  line-height: 500px;
+  font-size: 340px;
+  line-height: 365px;
   letter-spacing: 0.1em;
   font-feature-settings: "pnum" on, "lnum" on;
   color: #123E75;
@@ -1171,7 +1171,7 @@ address {
 .monitoring__inner {
   max-width: 900px;
   width: 100%;
-  margin: 0 auto;
+  margin-left: auto;
 }
 .monitoring__items {
   display: flex;
@@ -1621,7 +1621,7 @@ address {
 .business__inner {
   max-width: 996px;
   width: 100%;
-  margin: 0 auto;
+  margin-left: auto;
 }
 .business-item:not(:last-of-type) {
   margin-bottom: 25px;
@@ -1693,7 +1693,7 @@ address {
 .task__inner {
   max-width: 590px;
   width: 100%;
-  margin: 0 auto;
+  margin-left: auto;
 }
 .task__wr {
   max-width: 470px;
@@ -1911,7 +1911,7 @@ address {
 }
 .technologies__inner {
   max-width: 1035px;
-  margin: 0 auto;
+  margin-left: auto;
 }
 .technologies-nav {
   margin-bottom: 60px;
@@ -2042,7 +2042,7 @@ address {
 }
 .contacts__inner {
   max-width: 1100px;
-  margin: 0 0 0 auto;
+  margin-left: auto;
 }
 .contacts__row {
   display: flex;
@@ -2259,7 +2259,7 @@ address {
 }
 .gallery__inner {
   max-width: 900px;
-  margin: 0 auto;
+  margin-left: auto;
 }
 .gallery-block:not(:last-of-type) {
   margin-bottom: 50px;
@@ -2316,7 +2316,7 @@ address {
 }
 .production__inner {
   max-width: 996px;
-  margin: 0 auto;
+  margin-left: auto;
 }
 .production__video {
   margin-bottom: 60px;
@@ -2632,7 +2632,7 @@ address {
 }
 .cases__inner {
   max-width: 910px;
-  margin: 0 auto;
+  margin-left: auto;
 }
 .cases__items {
   display: flex;
@@ -2925,7 +2925,7 @@ address {
 }
 .news__inner {
   max-width: 900px;
-  margin: 0 auto;
+  margin-left: auto;
 }
 .news__block:not(:last-of-type) {
   margin-bottom: 100px;
@@ -3004,7 +3004,7 @@ address {
 }
 .vacancies__inner {
   max-width: 900px;
-  margin: 0 auto;
+  margin-left: auto;
 }
 .vacancies__title {
   font-weight: 300;
@@ -3155,15 +3155,15 @@ address {
 }
 .team__inner {
   max-width: 1000px;
-  margin: 0 auto;
+  margin-left: auto;
 }
 .team__items {
   display: flex;
   flex-wrap: wrap;
+  gap: 50px 0;
 }
 .team-item {
   width: 20%;
-  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -3188,7 +3188,8 @@ address {
   line-height: 120%;
   text-align: center;
   color: #123E75;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  min-height: 40px;
 }
 .team-item__name {
   font-weight: 700;
@@ -3231,7 +3232,7 @@ address {
 }
 .about__inner {
   max-width: 1035px;
-  margin: 0 auto;
+  margin-left: auto;
 }
 .about__title {
   font-size: 36px;
@@ -3433,7 +3434,7 @@ address {
 }
 .advantage__inner {
   max-width: 995px;
-  margin: 0 auto;
+  margin-left: auto;
 }
 .advantage__title {
   text-align: center;
@@ -3561,7 +3562,7 @@ address {
 }
 .speed__inner {
   max-width: 995px;
-  margin: 0 auto;
+  margin-left: auto;
 }
 .speed__list {
   font-weight: 500;
@@ -3652,7 +3653,7 @@ address {
 }
 .certificates__inner {
   max-width: 995px;
-  margin: 0 auto;
+  margin-left: auto;
 }
 .certificates__slider {
   position: relative;
@@ -3715,7 +3716,7 @@ address {
 .companies__inner {
   overflow: hidden;
   max-width: 992px;
-  margin: 0 auto;
+  margin-left: auto;
   position: relative;
   padding: 0 15px;
 }
@@ -3754,7 +3755,7 @@ address {
 }
 .case__inner {
   max-width: 910px;
-  margin: 0 auto;
+  margin-left: auto;
 }
 
 @media (max-width: 798px) {
