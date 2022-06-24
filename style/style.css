@@ -1171,7 +1171,7 @@ address {
 .monitoring__inner {
   max-width: 900px;
   width: 100%;
-  margin-left: auto;
+  margin: 0 auto;
 }
 .monitoring__items {
   display: flex;
@@ -1621,7 +1621,7 @@ address {
 .business__inner {
   max-width: 996px;
   width: 100%;
-  margin-left: auto;
+  margin: 0 auto;
 }
 .business-item:not(:last-of-type) {
   margin-bottom: 25px;
@@ -1693,7 +1693,7 @@ address {
 .task__inner {
   max-width: 590px;
   width: 100%;
-  margin-left: auto;
+  margin: 0 auto;
 }
 .task__wr {
   max-width: 470px;
@@ -1911,7 +1911,7 @@ address {
 }
 .technologies__inner {
   max-width: 1035px;
-  margin-left: auto;
+  margin: 0 auto;
 }
 .technologies-nav {
   margin-bottom: 60px;
@@ -2259,7 +2259,7 @@ address {
 }
 .gallery__inner {
   max-width: 900px;
-  margin-left: auto;
+  margin: 0 auto;
 }
 .gallery-block:not(:last-of-type) {
   margin-bottom: 50px;
@@ -2316,7 +2316,7 @@ address {
 }
 .production__inner {
   max-width: 996px;
-  margin-left: auto;
+  margin: 0 auto;
 }
 .production__video {
   margin-bottom: 60px;
@@ -2632,7 +2632,7 @@ address {
 }
 .cases__inner {
   max-width: 910px;
-  margin-left: auto;
+  margin: 0 auto;
 }
 .cases__items {
   display: flex;
@@ -2925,7 +2925,7 @@ address {
 }
 .news__inner {
   max-width: 900px;
-  margin-left: auto;
+  margin: 0 auto;
 }
 .news__block:not(:last-of-type) {
   margin-bottom: 100px;
@@ -3004,7 +3004,7 @@ address {
 }
 .vacancies__inner {
   max-width: 900px;
-  margin-left: auto;
+  margin: 0 auto;
 }
 .vacancies__title {
   font-weight: 300;
@@ -3155,7 +3155,7 @@ address {
 }
 .team__inner {
   max-width: 1000px;
-  margin-left: auto;
+  margin: 0 auto;
 }
 .team__items {
   display: flex;
@@ -3232,7 +3232,7 @@ address {
 }
 .about__inner {
   max-width: 1035px;
-  margin-left: auto;
+  margin: 0 auto;
 }
 .about__title {
   font-size: 36px;
@@ -3434,7 +3434,7 @@ address {
 }
 .advantage__inner {
   max-width: 995px;
-  margin-left: auto;
+  margin: 0 auto;
 }
 .advantage__title {
   text-align: center;
@@ -3562,7 +3562,7 @@ address {
 }
 .speed__inner {
   max-width: 995px;
-  margin-left: auto;
+  margin: 0 auto;
 }
 .speed__list {
   font-weight: 500;
@@ -3592,10 +3592,6 @@ address {
     background-size: cover;
     background-position: center;
   }
-}
-.geography {
-  padding: 40px 0 100px;
-  background: linear-gradient(to bottom, #fff 0%, #E2E5F2 100%);
 }
 .geography__inner {
   max-width: 1100px;
@@ -3653,7 +3649,7 @@ address {
 }
 .certificates__inner {
   max-width: 995px;
-  margin-left: auto;
+  margin: 0 auto;
 }
 .certificates__slider {
   position: relative;
@@ -3716,7 +3712,7 @@ address {
 .companies__inner {
   overflow: hidden;
   max-width: 992px;
-  margin-left: auto;
+  margin: 0 auto;
   position: relative;
   padding: 0 15px;
 }
@@ -3755,7 +3751,7 @@ address {
 }
 .case__inner {
   max-width: 910px;
-  margin-left: auto;
+  margin: 0 auto;
 }
 
 @media (max-width: 798px) {
