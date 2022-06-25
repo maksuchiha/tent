@@ -90,9 +90,9 @@ const checkHeight = () => {
 
     window.addEventListener('scroll', () => {
         if (scrollY > 1000 && scrollY > pageHeight - 1400) {
-            leftMenu.style.display = 'none'
+            leftMenu.classList.remove('left-menu_active')
         } else {
-            leftMenu.style.display = 'block'
+            leftMenu.classList.add('left-menu_active')
         }
     })
 }

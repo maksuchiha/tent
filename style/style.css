@@ -361,7 +361,7 @@ address {
   display: flex;
   justify-content: center;
   background: #729EC8;
-  border-radius: 15px;
+  border-radius: 10px;
   color: #fff;
   padding: 12px;
   font-size: 14px;
@@ -369,7 +369,7 @@ address {
 .header__button {
   padding: 10px;
   border: 2px solid #FBA628;
-  border-radius: 15px;
+  border-radius: 10px;
   color: #123E75;
   text-transform: uppercase;
   font-size: 14px;
@@ -461,9 +461,14 @@ address {
   position: fixed;
   max-width: 90px;
   z-index: 1;
+  display: none;
+  left: 5%;
 }
 .left-menu_mob {
   display: none;
+}
+.left-menu_active {
+  display: block;
 }
 .left-menu__list li:not(:last-of-type) {
   margin-bottom: 25px;
@@ -494,10 +499,14 @@ address {
   margin-bottom: 5px;
 }
 
+@media (max-width: 1480px) {
+  .left-menu {
+    display: none;
+  }
+}
 @media (max-width: 1230px) {
   .left-menu {
     position: static;
-    display: none;
     max-width: 100%;
     order: 4;
   }
@@ -556,12 +565,8 @@ address {
 }
 
 .design {
-  padding: 40px 0 80px;
+  padding: 40px 0 35px;
   background: linear-gradient(2.38deg, #FFFFFF 1.99%, #FFFFFF 2%, rgba(255, 255, 255, 0) 98.04%), url("./../img/design/bg.png") right 40px no-repeat;
-}
-.design__inner {
-  max-width: 1100px;
-  margin-left: auto;
 }
 .design__title {
   padding: 17px 30px 17px;
@@ -667,7 +672,7 @@ address {
 .design-tent-form input {
   background: rgba(255, 255, 255, 0.65);
   border: 1px solid #123E75;
-  border-radius: 15px;
+  border-radius: 10px;
   outline: none;
   font-size: 14px;
   line-height: 17px;
@@ -697,8 +702,9 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 18px 35px;
+  padding: 12px 35px;
   margin-bottom: 15px;
+  border-radius: 10px;
 }
 .design-tent-form__link {
   font-size: 12px;
@@ -1623,6 +1629,9 @@ address {
   width: 100%;
   margin: 0 auto;
 }
+.business__title {
+  margin-bottom: 25px;
+}
 .business-item:not(:last-of-type) {
   margin-bottom: 25px;
 }
@@ -1650,7 +1659,7 @@ address {
 .business-item__content {
   background: rgba(114, 158, 200, 0.55);
   border-radius: 10px;
-  padding: 25px;
+  padding: 15px 20px;
   width: 100%;
 }
 .business-item__name {
@@ -1672,7 +1681,7 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 25px 0 0 auto;
+  margin: 15px 0 0 auto;
 }
 
 @media (max-width: 606px) {
@@ -2128,7 +2137,7 @@ address {
 .contacts-form__button {
   background: #FBA628;
   border-radius: 10px;
-  padding: 15px;
+  padding: 12px;
   font-size: 20px;
   margin-bottom: 15px;
 }
@@ -3702,7 +3711,7 @@ address {
   }
 }
 .companies {
-  padding: 80px 0 70px;
+  padding: 35px 0 70px;
   background: #fff;
 }
 .companies__title {
@@ -3711,8 +3720,6 @@ address {
 }
 .companies__inner {
   overflow: hidden;
-  max-width: 992px;
-  margin: 0 auto;
   position: relative;
   padding: 0 15px;
 }
@@ -3746,7 +3753,7 @@ address {
   }
 }
 .case {
-  padding: 120px 0 80px;
+  padding: 120px 0 33px;
   background: url("./../img/cases/bg.jpg") center/cover no-repeat;
 }
 .case__inner {
@@ -3761,7 +3768,7 @@ address {
 }
 .faq {
   background: #fff;
-  padding: 80px 0 100px;
+  padding: 33px 0 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
