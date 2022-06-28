@@ -352,9 +352,16 @@ address {
 }
 .header__list li {
   flex: 1;
+  position: relative;
 }
 .header__list li:not(:last-of-type) {
   margin-right: 10px;
+}
+.header__list li:hover .header__link {
+  border-radius: 10px 10px 0 0;
+}
+.header__list li:hover .header__menu {
+  display: block;
 }
 .header__link {
   flex: 1;
@@ -365,6 +372,33 @@ address {
   color: #fff;
   padding: 12px;
   font-size: 14px;
+  transition: all 0.2s;
+}
+.header__menu {
+  display: none;
+  background: #fff;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  border-radius: 0 0 10px 10px;
+}
+.header__menu li:not(:last-of-type) {
+  margin: 0;
+}
+.header__menu li:last-of-type a:hover {
+  border-radius: 0 0 10px 10px;
+}
+.header__menu a {
+  display: block;
+  padding: 8px 15px;
+  color: #1959A8;
+  transition: all 0.2s;
+}
+.header__menu a:hover {
+  color: #fff;
+  background: #729EC8;
 }
 .header__button {
   padding: 10px;
@@ -440,7 +474,17 @@ address {
     width: 100%;
   }
   .header__list li:not(:last-of-type) {
-    margin-bottom: 15px;
+    margin: 0 0 15px;
+  }
+  .header__menu {
+    display: none;
+    position: static;
+  }
+  .header__menu li:not(:last-of-type) {
+    margin: 0;
+  }
+  .header__menu a {
+    padding: 15px;
   }
 }
 @media (max-width: 798px) {
@@ -462,6 +506,7 @@ address {
   max-width: 90px;
   z-index: 1;
   display: none;
+  top: 21%;
   left: 5%;
 }
 .left-menu_mob {
@@ -543,7 +588,7 @@ address {
 .button {
   color: #fff;
   background: #FBA628;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 13px 15px;
 }
 

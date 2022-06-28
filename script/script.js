@@ -68,7 +68,6 @@ const tabs = () => {
     })
 
     const autoTabs = () => {
-
         if (count <= 2) {
             tabs.querySelectorAll('.design-tent-nav__item').forEach((item) => {
                 item.classList.remove('design-tent-nav__item_active')
@@ -97,6 +96,17 @@ const checkHeight = () => {
     })
 }
 
+const navMob = () => {
+    const headerList = document.querySelector('.header__list')
+
+    headerList.addEventListener('click', (e) => {
+        if (e.target.closest('.header__link')) {
+            e.preventDefault()
+        }
+
+    })
+}
+
 
 burger('header-mob__burger', 'header__close', 'header__inner', 'header__inner_active')
 if (document.querySelector('.vacancies__inner')) {
@@ -107,4 +117,8 @@ if (document.querySelector('.design-tent-nav')) {
 }
 if (document.body.scrollWidth > 1230) {
     checkHeight()
+}
+
+if (document.body.scrollWidth < 1230) {
+    navMob()
 }
