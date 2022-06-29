@@ -3699,6 +3699,7 @@ address {
 }
 .certificates {
   padding: 100px 0;
+  background: #fff linear-gradient(to top, #E2E5F2 0%, rgba(226, 229, 242, 0) 100%);
 }
 .certificates__inner {
   max-width: 995px;
