@@ -506,7 +506,6 @@ address {
   max-width: 90px;
   z-index: 1;
   display: none;
-  top: 21%;
   left: 5%;
 }
 .left-menu_mob {
