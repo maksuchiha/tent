@@ -609,8 +609,12 @@ address {
 }
 
 .design {
-  padding: 40px 0 35px;
+  padding: 40px 0 50px;
   background: linear-gradient(2.38deg, #FFFFFF 1.99%, #FFFFFF 2%, rgba(255, 255, 255, 0) 98.04%), url("./../img/design/bg.png") right 40px no-repeat;
+}
+.design__inner {
+  max-width: 1035px;
+  margin: 0 auto;
 }
 .design__title {
   padding: 17px 30px 17px;
@@ -849,8 +853,8 @@ address {
   display: block;
 }
 .design__plus_2 {
-  left: 41%;
-  bottom: 8%;
+  left: 58%;
+  bottom: 40%;
 }
 .design__plus_2:after {
   display: block;
@@ -862,22 +866,22 @@ address {
   width: 0;
   height: 0;
   position: absolute;
-  bottom: -100px;
+  bottom: -170px;
   left: 15px;
   opacity: 0;
 }
 .design__plus_2:hover:after {
   transition: width, height 0.3s;
-  width: 500px;
-  height: 105px;
+  width: 125px;
+  height: 175px;
   opacity: 1;
 }
 .design__plus_2:hover ~ .design__descriptions > .design-desc_2 {
   display: block;
 }
 .design__plus_3 {
-  left: 44%;
-  top: 38%;
+  left: 48%;
+  top: 18%;
 }
 .design__plus_3:after {
   display: block;
@@ -889,22 +893,22 @@ address {
   width: 0;
   height: 0;
   position: absolute;
-  bottom: -219px;
+  bottom: -310px;
   left: 25px;
   opacity: 0;
 }
 .design__plus_3:hover:after {
   transition: width, height 0.3s;
-  width: 500px;
-  height: 234px;
+  width: 355px;
+  height: 325px;
   opacity: 1;
 }
 .design__plus_3:hover ~ .design__descriptions > .design-desc_3 {
   display: block;
 }
 .design__plus_4 {
-  top: 7%;
-  right: 10%;
+  top: 37%;
+  right: 5%;
 }
 .design__plus_4:after {
   display: block;
@@ -916,22 +920,22 @@ address {
   width: 0;
   height: 0;
   position: absolute;
-  bottom: -402px;
-  right: -75px;
+  bottom: -205px;
+  right: -38px;
   opacity: 0;
 }
 .design__plus_4:hover:after {
   opacity: 1;
   transition: width, height 0.3s;
-  width: 75px;
-  height: 417px;
+  width: 40px;
+  height: 220px;
 }
 .design__plus_4:hover ~ .design__descriptions > .design-desc_4 {
   display: block;
 }
 .design__plus_5 {
   right: 20%;
-  bottom: 53%;
+  bottom: 34%;
 }
 .design__plus_5:after {
   opacity: 0;
@@ -944,16 +948,43 @@ address {
   width: 0;
   height: 0;
   position: absolute;
-  bottom: -285px;
+  bottom: -75px;
   right: -73px;
 }
 .design__plus_5:hover:after {
   opacity: 1;
   transition: width, height 0.3s;
   width: 75px;
-  height: 300px;
+  height: 90px;
 }
 .design__plus_5:hover ~ .design__descriptions > .design-desc_5 {
+  display: block;
+}
+.design__plus_6 {
+  left: 13%;
+  top: 25%;
+}
+.design__plus_6:after {
+  opacity: 0;
+  display: block;
+  content: "";
+  border-right: 2px solid #F87E07;
+  border-top: 2px solid #F87E07;
+  border-left: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: -270px;
+  right: -735px;
+}
+.design__plus_6:hover:after {
+  opacity: 1;
+  transition: width, height 0.3s;
+  width: 740px;
+  height: 285px;
+}
+.design__plus_6:hover ~ .design__descriptions > .design-desc_6 {
   display: block;
 }
 .design-desc {
@@ -1001,6 +1032,26 @@ address {
   .design-tent__bottom {
     margin-left: 0;
   }
+  .design__plus {
+    display: none;
+  }
+  .design__descriptions {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+    overflow-x: scroll;
+  }
+  .design__descriptions::-webkit-scrollbar {
+    display: none;
+  }
+  .design-desc {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    max-width: 300px;
+    width: 100%;
+  }
 }
 @media (max-width: 1022px) {
   .design__title {
@@ -1021,46 +1072,6 @@ address {
   .design-tent__quest {
     font-size: 15px;
   }
-  .design__plus_1:after {
-    bottom: -149px;
-  }
-  .design__plus_1:hover:after {
-    width: 347px;
-    height: 150px;
-  }
-  .design__plus_2:after {
-    bottom: -65px;
-    left: 14px;
-  }
-  .design__plus_2:hover:after {
-    width: 140px;
-    height: 70px;
-  }
-  .design__plus_3 {
-    top: 35%;
-  }
-  .design__plus_3:after {
-    bottom: -155px;
-  }
-  .design__plus_3:hover:after {
-    width: 165px;
-    height: 170px;
-  }
-  .design__plus_4:after {
-    right: -40px;
-  }
-  .design__plus_4:hover:after {
-    width: 40px;
-  }
-  .design__plus_5 {
-    top: 50%;
-  }
-  .design__plus_5:after {
-    bottom: -100px;
-  }
-  .design__plus_5:hover:after {
-    height: 100px;
-  }
 }
 @media (max-width: 798px) {
   .design {
@@ -1073,26 +1084,6 @@ address {
   .design-tent-form {
     max-width: 60%;
     margin: 0 auto;
-  }
-  .design__plus {
-    display: none;
-  }
-  .design__descriptions {
-    margin-top: 15px;
-    display: flex;
-    gap: 15px;
-    overflow-x: scroll;
-  }
-  .design__descriptions::-webkit-scrollbar {
-    display: none;
-  }
-  .design-desc {
-    position: static;
-    display: flex;
-    flex-direction: column;
-    flex: 0 0 auto;
-    max-width: 300px;
-    width: 100%;
   }
 }
 @media (max-width: 606px) {
@@ -3756,7 +3747,7 @@ address {
   }
 }
 .companies {
-  padding: 35px 0 70px;
+  padding: 50px 0 70px;
   background: #fff;
 }
 .companies__title {
