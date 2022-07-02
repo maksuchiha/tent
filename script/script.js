@@ -83,6 +83,25 @@ const tabs = () => {
     setInterval(autoTabs, 4000)
 }
 
+const tabTask = () => {
+    const tabsPanel = document.querySelector('.task-form__radios_tabs');
+    const inputs =  tabsPanel.querySelectorAll('input');
+    const hiddenBlocks = document.querySelectorAll('.task-selectors_disabled[data-task="hidden"]');
+
+    tabsPanel.addEventListener('click', (e) => {
+        if (e.target.closest('input')) {
+            const btn = e.target.closest('input');
+            inputs.forEach((input, index) => {
+                if (btn === input) {
+                    hiddenBlocks[index].classList.toggle('task-selectors_disabled');
+                } else {
+                    hiddenBlocks[index].classList.add('task-selectors_disabled');
+                }
+            })
+        }
+    });
+}
+
 const checkHeight = () => {
     const pageHeight = document.body.scrollHeight
     const leftMenu = document.querySelector('main .left-menu')
@@ -121,4 +140,7 @@ if (document.body.scrollWidth > 1230) {
 
 if (document.body.scrollWidth < 1230) {
     navMob()
+}
+if (document.querySelector('.task-form__radios_tabs')) {
+    tabTask();
 }
