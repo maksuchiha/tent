@@ -106,6 +106,7 @@ const checkHeight = () => {
     const pageHeight = document.body.scrollHeight
     const leftMenu = document.querySelector('main .left-menu')
 
+
     window.addEventListener('scroll', () => {
         if (scrollY > 1000 && scrollY > pageHeight - 1400) {
             leftMenu.classList.remove('left-menu_active')
