@@ -40,8 +40,10 @@
   font-display: swap;
 }
 html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
 }
 
 body {
@@ -53,14 +55,19 @@ main {
 }
 
 hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
 }
 
 pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
 a {
@@ -68,8 +75,10 @@ a {
 }
 
 abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
 }
 
 b,
@@ -80,8 +89,10 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
 small {
@@ -113,19 +124,25 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
 }
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -156,12 +173,18 @@ fieldset {
 }
 
 legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
 }
 
 progress {
@@ -174,8 +197,10 @@ textarea {
 
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
 }
 
 [type=number]::-webkit-inner-spin-button,
@@ -184,8 +209,10 @@ textarea {
 }
 
 [type=search] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
 }
 
 [type=search]::-webkit-search-decoration {
@@ -193,8 +220,10 @@ textarea {
 }
 
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
 }
 
 details {
@@ -311,6 +340,7 @@ address {
   .title {
     font-size: 28px;
   }
+
   .subtitle {
     font-size: 17px;
   }
@@ -663,7 +693,8 @@ address {
 .design-tent__model img {
   width: 100%;
   height: 100%;
-  object-fit: scale-down;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 .design-tent__left {
   max-width: 590px;
@@ -728,6 +759,18 @@ address {
   padding: 11px;
   width: 100%;
 }
+.design-tent-form input::-moz-placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  color: rgba(25, 89, 168, 0.75);
+}
+.design-tent-form input:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  color: rgba(25, 89, 168, 0.75);
+}
 .design-tent-form input::placeholder {
   font-size: 14px;
   line-height: 17px;
@@ -757,7 +800,8 @@ address {
 .design-tent-form__link {
   font-size: 12px;
   line-height: 14px;
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   display: flex;
   justify-content: center;
   font-style: normal;
@@ -1006,7 +1050,8 @@ address {
   display: flex;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .design-desc__info {
   padding: 10px;
@@ -1234,7 +1279,8 @@ address {
 .monitoring__item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .monitoring__link {
   display: flex;
@@ -1349,6 +1395,18 @@ address {
 .feedback-form input:last-of-type {
   margin-right: 25px;
 }
+.feedback-form input::-moz-placeholder {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(18, 62, 117, 0.55);
+}
+.feedback-form input:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(18, 62, 117, 0.55);
+}
 .feedback-form input::placeholder {
   font-weight: 300;
   font-size: 15px;
@@ -1372,7 +1430,8 @@ address {
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   color: #1959A8;
   display: flex;
   justify-content: center;
@@ -1487,7 +1546,8 @@ address {
 .footer__contacts li img, .footer__contacts a img {
   width: 25px;
   height: 25px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-right: 10px;
 }
 .footer__quest {
@@ -1533,7 +1593,8 @@ address {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   font-feature-settings: "tnum" on, "lnum" on;
   color: #123E75;
 }
@@ -1780,6 +1841,12 @@ address {
   display: block;
   margin-bottom: 10px;
 }
+.task-form input[type=text]::-moz-placeholder {
+  color: rgba(18, 62, 117, 0.5);
+}
+.task-form input[type=text]:-ms-input-placeholder {
+  color: rgba(18, 62, 117, 0.5);
+}
 .task-form input[type=text]::placeholder {
   color: rgba(18, 62, 117, 0.5);
 }
@@ -1793,6 +1860,12 @@ address {
   border-bottom: 1px solid #1959A8;
   border-radius: 0;
   padding: 10px;
+}
+.task-form__radios input[type=text]::-moz-placeholder {
+  color: rgba(18, 62, 117, 0.5);
+}
+.task-form__radios input[type=text]:-ms-input-placeholder {
+  color: rgba(18, 62, 117, 0.5);
 }
 .task-form__radios input[type=text]::placeholder {
   color: rgba(18, 62, 117, 0.5);
@@ -1830,6 +1903,9 @@ address {
 }
 .task__subform {
   margin: 25px 0;
+}
+.task__subform_diabled {
+  display: none;
 }
 .task-selectors {
   margin: 25px 0;
@@ -2018,7 +2094,8 @@ address {
 .technologies-block__img img {
   width: 100%;
   height: 100%;
-  object-fit: scale-down;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 .technologies-block__img_right {
   max-width: 381px;
@@ -2158,6 +2235,12 @@ address {
   padding: 10px;
   margin-bottom: 10px;
 }
+.contacts-form input[type=text]::-moz-placeholder {
+  color: rgba(25, 89, 168, 0.75);
+}
+.contacts-form input[type=text]:-ms-input-placeholder {
+  color: rgba(25, 89, 168, 0.75);
+}
 .contacts-form input[type=text]::placeholder {
   color: rgba(25, 89, 168, 0.75);
 }
@@ -2202,7 +2285,8 @@ address {
 .contacts-form__politic {
   font-size: 12px;
   line-height: 14px;
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   color: #1959A8;
   text-align: center;
   display: flex;
@@ -2327,7 +2411,8 @@ address {
   width: 100%;
   height: 100%;
   display: flex;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .gallery__button {
   margin-left: auto;
@@ -2419,7 +2504,8 @@ address {
   position: relative;
 }
 .production__img img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .production__img:before {
   position: absolute;
@@ -2542,7 +2628,8 @@ address {
 .build-settings__img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .build-settings__info {
   padding: 10px;
@@ -2587,7 +2674,8 @@ address {
 .build__image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .build__button {
   margin-left: auto;
@@ -2607,7 +2695,8 @@ address {
 .build-project__img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .build-project__title {
   font-weight: 700;
@@ -2709,7 +2798,8 @@ address {
 .cases-item__img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .cases-item__title {
   font-weight: 700;
@@ -2789,7 +2879,8 @@ address {
 .scopies-message__item img {
   width: 140px;
   height: 120px;
-  object-fit: scale-down;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
   display: flex;
   margin-bottom: 5px;
 }
@@ -2856,7 +2947,8 @@ address {
 .scopies-block__img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: flex;
 }
 .scopies-block-bottom {
@@ -2867,7 +2959,8 @@ address {
 .scopies-block-bottom img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: flex;
 }
 .scopies-block-bottom__left {
@@ -2914,7 +3007,8 @@ address {
     height: 450px;
   }
   .scopies-block-bottom__left img {
-    object-position: bottom;
+    -o-object-position: bottom;
+       object-position: bottom;
   }
   .scopies-block-bottom__right {
     width: 100%;
@@ -3126,7 +3220,8 @@ address {
 .vacancies-block__img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .vacancies-block__text {
   font-weight: 500;
@@ -3227,9 +3322,11 @@ address {
   display: flex;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
-  object-position: 0 15%;
+  -o-object-position: 0 15%;
+     object-position: 0 15%;
 }
 .team-item__status {
   font-size: 16px;
@@ -3513,7 +3610,8 @@ address {
 .advantage-item__img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .advantage-item__name {
   font-weight: 700;
@@ -3716,7 +3814,8 @@ address {
 .certificates__slide img {
   width: 100%;
   height: 100%;
-  object-fit: scale-down;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 .certificates__arrow {
   position: absolute;
@@ -3774,7 +3873,8 @@ address {
 .companies__slide img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @media (max-width: 798px) {
@@ -3809,6 +3909,4 @@ address {
 .faq {
   background: #fff;
   padding: 33px 0 100px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

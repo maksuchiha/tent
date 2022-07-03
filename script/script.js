@@ -84,16 +84,40 @@ const tabs = () => {
 }
 
 const tabTask = () => {
-    const tabsPanel = document.querySelector('.task-form__radios_tabs');
-    const inputs =  tabsPanel.querySelectorAll('input');
+    const tabsPanelType = document.querySelector('.task-form__radios[data-radios-tabs="1"]');
+    const hiddenSubForm = document.querySelector('.task__subform[data-subform="hidden"]');
+
+    const tabsPanelSize = document.querySelector('.task-form__radios[data-radios-tabs="2"]');
+    const inputsSize =  tabsPanelSize.querySelectorAll('input');
     const hiddenBlocks = document.querySelectorAll('.task-selectors_disabled[data-task="hidden"]');
 
-    tabsPanel.addEventListener('click', (e) => {
+    tabsPanelType.addEventListener('click', (e) => {
+        if(e.target.closest('input')) {
+            const input = e.target.closest('input').id;
+            if (input == 'type-3') {
+                if(hiddenSubForm.classList.contains('task__subform_diabled')) {
+                    hiddenSubForm.classList.remove('task__subform_diabled');
+                }
+            } else {
+                hiddenSubForm.classList.add('task__subform_diabled');
+                hiddenBlocks.forEach(item => {
+                    item.querySelectorAll('input').forEach(input => {
+                        input.checked = false;
+                    })
+                    item.classList.add('task-selectors_disabled');
+                });
+            }
+        }
+    });
+
+    tabsPanelSize.addEventListener('click', (e) => {
         if (e.target.closest('input')) {
             const btn = e.target.closest('input');
-            inputs.forEach((input, index) => {
+            inputsSize.forEach((input, index) => {
                 if (btn === input) {
-                    hiddenBlocks[index].classList.toggle('task-selectors_disabled');
+                    if (hiddenBlocks[index].classList.contains('task-selectors_disabled')) {
+                        hiddenBlocks[index].classList.remove('task-selectors_disabled');
+                    }
                 } else {
                     hiddenBlocks[index].classList.add('task-selectors_disabled');
                 }
@@ -141,6 +165,6 @@ if (document.body.scrollWidth > 1230) {
 if (document.body.scrollWidth < 1230) {
     navMob()
 }
-if (document.querySelector('.task-form__radios_tabs')) {
+if (document.querySelector('.task-form__radios[data-radios-tabs="1"]') && document.querySelector('.task-form__radios[data-radios-tabs="2"]')) {
     tabTask();
 }
