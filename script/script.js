@@ -152,6 +152,27 @@ const navMob = () => {
     })
 }
 
+const technologiesNav = () => {
+    const navList = document.querySelector('.technologies-nav__list')
+    const technologiesInfo = document.querySelector('.technologies__info')
+
+    navList.addEventListener('click', (e) => {
+        if (e.target.closest('.technologies-nav__link')) {
+            navList.querySelectorAll('.technologies-nav__link').forEach(item => {
+                item.classList.remove('technologies-nav__link_active')
+            })
+            e.target.closest('.technologies-nav__link').classList.add('technologies-nav__link_active')
+            technologiesInfo.querySelectorAll('.technologies-block').forEach(item => {
+                item.classList.remove('technologies-block_active')
+                if (item.getAttribute('data-info') === e.target.closest('.technologies-nav__link')
+                    .getAttribute('data-nav')) {
+                    item.classList.add('technologies-block_active')
+                }
+            })
+        }
+    })
+}
+
 
 burger('header-mob__burger', 'header__close', 'header__inner', 'header__inner_active')
 if (document.querySelector('.vacancies__inner')) {
@@ -169,4 +190,7 @@ if (document.body.scrollWidth < 1230) {
 }
 if (document.querySelector('.task-form__radios[data-radios-tabs="1"]') && document.querySelector('.task-form__radios[data-radios-tabs="2"]')) {
     tabTask();
+}
+if (document.querySelector('.technologies-nav__list')) {
+    technologiesNav()
 }
