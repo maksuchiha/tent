@@ -1980,6 +1980,19 @@ address {
 .technologies-block__img_right {
   max-width: 381px;
 }
+.technologies-block__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.technologies-block__texts ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.technologies__block:not(:last-of-type) {
+  margin-bottom: 30px;
+}
 .technologies__text {
   font-weight: 500;
   font-size: 16px;
