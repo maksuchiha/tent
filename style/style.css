@@ -978,14 +978,14 @@ address {
   width: 0;
   height: 0;
   position: absolute;
-  bottom: -270px;
+  bottom: -275px;
   right: -735px;
 }
 .design__plus_6:hover:after {
   opacity: 1;
   transition: width, height 0.3s;
   width: 740px;
-  height: 285px;
+  height: 290px;
 }
 .design__plus_6:hover ~ .design__descriptions > .design-desc_6 {
   display: block;
