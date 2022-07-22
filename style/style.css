@@ -848,7 +848,7 @@ address {
 }
 .design__plus_1:hover:after {
   transition: width, height 0.3s;
-  width: 635px;
+  width: 577px;
   height: 200px;
   opacity: 1;
 }
@@ -993,17 +993,17 @@ address {
 .design-desc {
   display: none;
   position: absolute;
-  bottom: -190px;
+  bottom: -145px;
   right: 0;
   z-index: 2;
   max-width: 300px;
-  min-height: 300px;
+  min-height: 260px;
   background: rgba(25, 89, 168, 0.05);
   border: 1px solid #1959A8;
 }
 .design-desc__img {
   border-bottom: 1px solid #1959A8;
-  height: 180px;
+  height: 145px;
 }
 .design-desc__img img {
   display: flex;
