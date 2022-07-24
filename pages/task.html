@@ -232,13 +232,13 @@
                         <input placeholder="Ширина (внешний размер) *" aria-label="" type="text">
                         <input placeholder="Длина (внешний размер) *" aria-label="" type="text">
                         <input placeholder="Высота стены (внешний размер) *" aria-label="" type="text">
-                        <div class="task__subform">
+                        <div class="task__subform task__subform_type">
                             <h2 class="task__subtitle task__subtitle_radio">
                                 Тип покрытия : *
                             </h2>
                             <div data-radios-tabs="1" class="task-form__radios">
                                 <div class="task-form__radio">
-                                    <input name="task-type-1" id="type-1" aria-label="" type="radio">
+                                    <input data-size="1" name="task-type-1" id="type-1" aria-label="" type="radio">
                                     <label for="type-1">
                                         <img src="./../img/types/1.png" alt="image">
                                     </label>
@@ -247,7 +247,7 @@
                                     </div>
                                 </div>
                                 <div class="task-form__radio">
-                                    <input name="task-type-1" id="type-2" aria-label="" type="radio">
+                                    <input data-size="2" name="task-type-1" id="type-2" aria-label="" type="radio">
                                     <label for="type-2">
                                         <img src="./../img/types/2.png" alt="image">
                                     </label>
@@ -256,7 +256,7 @@
                                     </div>
                                 </div>
                                 <div class="task-form__radio">
-                                    <input name="task-type-1" id="type-3" aria-label="" type="radio">
+                                    <input data-size="3" name="task-type-1" id="type-3" aria-label="" type="radio">
                                     <label for="type-3">
                                         <img src="./../img/types/3.png" alt="image">
                                     </label>
@@ -275,7 +275,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div data-subform="hidden" class="task__subform task__subform_diabled">
+                        <div data-size="3" class="task__subform task-selectors_thickness task-selectors_sub task__subform_disabled">
                             <h2 class="task__subtitle task__subtitle_radio">
                                 Тип покрытия : *
                             </h2>
@@ -308,40 +308,40 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div data-task="hidden" class="task-selectors task-selectors_disabled">
-                            <h2 class="task__subtitle task__subtitle_radio">
-                                Выбор толщины
-                            </h2>
-                            <div class="task-selectors__items">
-                                <input id="thickness-1" name="thickness-1" aria-label="" type="radio">
-                                <label for="thickness-1">0,5 мм.</label>
-                                <input id="thickness-2" name="thickness-1" aria-label="" type="radio">
-                                <label for="thickness-2">0,6 мм.</label>
-                                <input id="thickness-7" name="thickness-1" aria-label="" type="radio">
-                                <label for="thickness-7">0,7 мм.</label>
+                            <div class="task-selectors task-selectors_sub-menu task-selectors_disabled">
+                                <h2 class="task__subtitle task__subtitle_radio">
+                                    Выбор толщины
+                                </h2>
+                                <div class="task-selectors__items">
+                                    <input id="thickness-5" name="thickness-3" aria-label="" type="radio">
+                                    <label for="thickness-5">50-100 мм.</label>
+                                    <input id="thickness-6" name="thickness-3" aria-label="" type="radio">
+                                    <label for="thickness-6">150-200 мм.</label>
+                                </div>
                             </div>
                         </div>
-                        <div data-task="hidden" class="task-selectors task-selectors_disabled">
+                        <div data-size="1" class="task-selectors task-selectors_thickness task__subform_disabled">
                             <h2 class="task__subtitle task__subtitle_radio">
                                 Выбор толщины
                             </h2>
                             <div class="task-selectors__items">
-                                <input id="thickness-3" name="thickness-2" aria-label="" type="radio">
-                                <label for="thickness-3">50-100 мм.</label>
-                                <input id="thickness-4" name="thickness-2" aria-label="" type="radio">
-                                <label for="thickness-4">150-200 мм.</label>
+                                <input id="thickness-1" name="thickness-3" aria-label="" type="radio">
+                                <label for="thickness-1">50-100 мм.</label>
+                                <input id="thickness-2" name="thickness-3" aria-label="" type="radio">
+                                <label for="thickness-2">150-200 мм.</label>
                             </div>
                         </div>
-                        <div data-task="hidden" class="task-selectors task-selectors_disabled">
+                        <div data-size="2" class="task-selectors task-selectors_thickness task__subform_disabled">
                             <h2 class="task__subtitle task__subtitle_radio">
                                 Выбор толщины
                             </h2>
                             <div class="task-selectors__items">
-                                <input id="thickness-5" name="thickness-3" aria-label="" type="radio">
-                                <label for="thickness-5">50-100 мм.</label>
-                                <input id="thickness-6" name="thickness-3" aria-label="" type="radio">
-                                <label for="thickness-6">150-200 мм.</label>
+                                <input id="thickness-3" name="thickness-3" aria-label="" type="radio">
+                                <label for="thickness-3"> 0,5 мм.</label>
+                                <input id="thickness-4" name="thickness-3" aria-label="" type="radio">
+                                <label for="thickness-4">0,6, мм.</label>
+                                <input id="thickness-7" name="thickness-3" aria-label="" type="radio">
+                                <label for="thickness-7">0,7, мм.</label>
                             </div>
                         </div>
                         <input placeholder="Количество ворот" aria-label="" type="text">

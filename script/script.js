@@ -84,47 +84,30 @@ const tabs = () => {
 }
 
 const tabTask = () => {
-    const tabsPanelType = document.querySelector('.task-form__radios[data-radios-tabs="1"]');
-    const hiddenSubForm = document.querySelector('.task__subform[data-subform="hidden"]');
+    const typeSubForm = document.querySelector('.task__subform_type')
+    const subSelectors = document.querySelector('.task-selectors_sub')
 
-    const tabsPanelSize = document.querySelector('.task-form__radios[data-radios-tabs="2"]');
-    const inputsSize =  tabsPanelSize.querySelectorAll('input');
-    const hiddenBlocks = document.querySelectorAll('.task-selectors[data-task="hidden"]');
 
-    tabsPanelType.addEventListener('click', (e) => {
-        if(e.target.closest('input')) {
-            const input = e.target.closest('input').id;
-            if (input == 'type-3') {
-                if(hiddenSubForm.classList.contains('task__subform_diabled')) {
-                    hiddenSubForm.classList.remove('task__subform_diabled');
-                }
-            } else {
-                hiddenSubForm.classList.add('task__subform_diabled');
-                inputsSize.forEach(input => input.checked = false);
-                hiddenBlocks.forEach(item => {
-                    item.querySelectorAll('input').forEach(input => {
-                        input.checked = false;
-                    })
-                    item.classList.add('task-selectors_disabled');
-                });
-            }
-        }
-    });
-
-    tabsPanelSize.addEventListener('click', (e) => {
+    typeSubForm.addEventListener('click', (e) => {
         if (e.target.closest('input')) {
-            const btn = e.target.closest('input');
-            inputsSize.forEach((input, index) => {
-                if (btn === input) {
-                    if (hiddenBlocks[index].classList.contains('task-selectors_disabled')) {
-                        hiddenBlocks[index].classList.remove('task-selectors_disabled');
-                    }
-                } else {
-                    hiddenBlocks[index].classList.add('task-selectors_disabled');
+            document.querySelectorAll('.task-selectors_thickness').forEach(item => {
+                if (item !== document.querySelector('.task-selectors_sub-menu')) {
+                    item.classList.add('task__subform_disabled')
+                }
+                if (e.target.closest('input').getAttribute('data-size') === item.getAttribute('data-size')) {
+                    item.classList.remove('task__subform_disabled')
                 }
             })
         }
-    });
+    })
+
+    subSelectors.addEventListener('click', (e) => {
+        if (e.target.checked && e.target.id === 'type-7') {
+            document.querySelector('.task-selectors_sub-menu').classList.remove('task-selectors_disabled')
+        } else if (e.target.checked && (e.target.getAttribute('name') !== 'thickness-3')) {
+            document.querySelector('.task-selectors_sub-menu').classList.add('task-selectors_disabled')
+        }
+    })
 }
 
 const checkHeight = () => {

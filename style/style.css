@@ -1775,7 +1775,7 @@ address {
 .task__subform {
   margin: 25px 0;
 }
-.task__subform_diabled {
+.task__subform_disabled {
   display: none;
 }
 .task-selectors {
