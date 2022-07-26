@@ -1301,6 +1301,8 @@ address {
   font-size: 16px;
   line-height: 19px;
   color: #123E75;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 1230px) {
@@ -1605,7 +1607,7 @@ address {
   padding: 40px 0 100px;
 }
 .business__inner {
-  max-width: 996px;
+  max-width: 900px;
   width: 100%;
   margin: 0 auto;
 }
@@ -2336,7 +2338,7 @@ address {
   padding: 40px 0 100px;
 }
 .production__inner {
-  max-width: 996px;
+  max-width: 900px;
   margin: 0 auto;
 }
 .production__video {
