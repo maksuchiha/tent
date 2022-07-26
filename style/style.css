@@ -1907,7 +1907,7 @@ address {
   padding: 40px 0 100px;
 }
 .technologies__inner {
-  max-width: 1035px;
+  max-width: 900px;
   margin: 0 auto;
 }
 .technologies-nav {
@@ -1926,8 +1926,8 @@ address {
   border: 2px solid #FBA628;
   border-radius: 10px;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 19px;
   text-align: center;
   color: #123E75;
   transition: all 0.3s;
