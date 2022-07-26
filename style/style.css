@@ -2064,8 +2064,8 @@ address {
   padding: 40px 0 140px;
 }
 .contacts__inner {
-  max-width: 1100px;
-  margin-left: auto;
+  max-width: 900px;
+  margin: 0 auto;
 }
 .contacts__row {
   display: flex;
@@ -2075,7 +2075,7 @@ address {
   width: 100%;
 }
 .contacts__text {
-  font-size: 35px;
+  font-size: 28px;
   line-height: 150%;
   text-transform: uppercase;
   color: #123E75;
@@ -2189,7 +2189,7 @@ address {
     justify-content: space-between;
   }
   .contacts__info {
-    max-width: 50%;
+    max-width: 60%;
   }
   .contacts__text {
     font-size: 28px;
