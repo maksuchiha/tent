@@ -2654,7 +2654,7 @@ address {
   padding: 40px 0 100px;
 }
 .cases__inner {
-  max-width: 910px;
+  max-width: 900px;
   margin: 0 auto;
 }
 .cases__items {
@@ -3254,7 +3254,7 @@ address {
   padding: 40px 0 100px;
 }
 .about__inner {
-  max-width: 1035px;
+  max-width: 900px;
   margin: 0 auto;
 }
 .about__title {
@@ -3323,7 +3323,7 @@ address {
 }
 .about-info-num__count {
   font-weight: 900;
-  font-size: 100px;
+  font-size: 80px;
   line-height: 70%;
   display: flex;
   align-items: center;
@@ -3336,8 +3336,8 @@ address {
   position: absolute;
   bottom: 0;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 140%;
+  font-size: 15px;
+  line-height: 120%;
   display: flex;
   align-items: center;
   text-align: center;
