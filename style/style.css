@@ -1969,7 +1969,7 @@ address {
   flex-direction: row-reverse;
 }
 .technologies-block__img {
-  max-width: 460px;
+  max-width: 436px;
   height: 280px;
   width: 100%;
   flex: 0 0 auto;
@@ -2028,7 +2028,7 @@ address {
     margin-bottom: 15px;
   }
   .technologies-block__img {
-    max-width: 350px;
+    max-width: 371px;
   }
   .technologies__text {
     font-size: 14px;
